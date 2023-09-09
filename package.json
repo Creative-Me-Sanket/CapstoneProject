@@ -21,9 +21,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "client" : "npm start --prefix ./client ",
-    "dev" : "concurrently \"npm start\" \"npm run client\""
+    "start": " index.js"
+   
   },
   "keywords": [],
   "author": "",
