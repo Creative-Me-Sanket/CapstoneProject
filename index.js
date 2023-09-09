@@ -55,9 +55,9 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 // Static Files
-app.use(express.static(path.join(__dirname, '../client/build')))
+app.use(express.static(path.join(__dirname, './client/build')))
 app.get('*' , function(req,res){
-  res.send(path.join(__dirname,"../client/build"))
+  res.send(path.join(__dirname,"./client/build"))
 })
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
