@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          SanketKhule_UpGrad_Project
+          Sociopedia
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
