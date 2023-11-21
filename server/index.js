@@ -55,10 +55,11 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 // Static Files
-app.use(express.static(path.join(__dirname, '../client/build')))
+app.use(express.static(path.join(__dirname, './client/build')))
 app.get('*' , function(req,res){
-  res.send(path.join(__dirname,"../client/build"))
+  res.send(path.join(__dirname,"./client/build/index.html"))
 })
+
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 // const db = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASS}@cluster0.tpt5sw0.mongodb.net/?retryWrites=true&w=majority`
